@@ -860,7 +860,7 @@ section {{ padding: 64px 0; }}
   background: rgba(0,0,0,0.5);
   backdrop-filter: blur(4px);
 }}
-.cover-type-badge.video {{ color: var(--blue); border: 1px solid rgba(52,120,246,0.3); }}
+.cover-type-badge.video {{ color: #ffffff; border: 1px solid rgba(255,255,255,0.4); }}
 .cover-type-badge.image {{ color: var(--amber); border: 1px solid rgba(245,158,11,0.3); }}
 
 /* ══════════════════════════════════════════════════
