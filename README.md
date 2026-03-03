@@ -4,6 +4,12 @@
 
 一个 Claude Code 技能，可以爬取小红书账号主页、下载封面图，并生成结构化的方法论报告和交互式数据看板。
 
+<img width="1364" height="1183" alt="CleanShot 2026-03-03 at 09 02 27" src="https://github.com/user-attachments/assets/ce90dc9c-4708-482d-9c52-2dff8eba0f74" />
+<img width="1361" height="820" alt="CleanShot 2026-03-03 at 09 02 40" src="https://github.com/user-attachments/assets/3dd3925d-e1fb-45ca-b595-005ccc14fe48" />
+<img width="1365" height="1180" alt="CleanShot 2026-03-03 at 09 02 50" src="https://github.com/user-attachments/assets/172bcb42-2766-4a71-8c66-226089751294" />
+<img width="1362" height="1163" alt="CleanShot 2026-03-03 at 09 03 10" src="https://github.com/user-attachments/assets/a8011018-e856-4c1a-b4bc-674dcf04f5b9" />
+<img width="1364" height="1137" alt="CleanShot 2026-03-03 at 09 03 37" src="https://github.com/user-attachments/assets/a3035026-4ddb-40e2-87d6-41bafe2b3752" />
+
 ## 安装
 
 ```bash
