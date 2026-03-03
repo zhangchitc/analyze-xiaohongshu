@@ -1,17 +1,17 @@
 # analyze-xiaohongshu
 
-> Analyze a Xiaohongshu (小红书/RED) account by scraping its notes and covers, then generating a comprehensive methodology report across 7 dimensions.
+> 爬取小红书账号的笔记和封面图，自动生成涵盖 7 大维度的账号方法论报告。
 
-A Claude Code skill that scrapes a Xiaohongshu account's profile, downloads cover images, and produces a structured methodology report with an interactive dashboard.
+一个 Claude Code 技能，可以爬取小红书账号主页、下载封面图，并生成结构化的方法论报告和交互式数据看板。
 
-## Installation
+## 安装
 
 ```bash
 cd ~/.claude/skills
 git clone https://github.com/zhangchitc/analyze-xiaohongshu.git analyze-xiaohongshu
 ```
 
-Install dependencies:
+安装依赖：
 
 ```bash
 cd analyze-xiaohongshu
@@ -19,38 +19,37 @@ pip3 install -r scripts/requirements.txt
 playwright install chromium
 ```
 
-## Usage
+## 使用方式
 
-In Claude Code, use:
+在 Claude Code 中输入：
 
 ```
-/analyze-xiaohongshu <xiaohongshu-url-or-user-id>
+/analyze-xiaohongshu <小红书链接或用户ID>
 ```
 
-Or describe naturally:
+或者用自然语言描述：
 
 - "分析小红书账号 https://www.xiaohongshu.com/user/profile/xxx"
 - "爬取小红书 xxx 的数据并生成报告"
-- "analyze xiaohongshu account xxx"
 - "生成账号方法论报告"
 
-## How it works
+## 工作原理
 
-1. **Scrape** — Opens a Chromium browser, logs in via QR code (first time), scrolls the profile page to collect up to 100 note cards (title, cover image, likes, content type)
-2. **Download covers** — Saves cover images locally for visual analysis
-3. **Analyze** — Claude reads the data and cover images, performing analysis across 7 dimensions:
-   - Account overview & stats
-   - Top 10 hit notes breakdown
-   - Title pattern analysis
-   - Cover image visual analysis
-   - Content topic clustering
-   - Format comparison (video vs image)
-   - Replicable methodology summary
-4. **Generate report** — Outputs a detailed Markdown report (`report.md`) and structured JSON (`analysis.json`)
-5. **Build dashboard** — Generates an interactive HTML dashboard with charts and visualizations
+1. **爬取数据** — 打开 Chromium 浏览器，首次使用需扫码登录，滚动主页收集最多 100 条笔记卡片（标题、封面图、点赞数、内容类型）
+2. **下载封面** — 将封面图保存到本地，用于视觉分析
+3. **七维分析** — Claude 读取数据和封面图，从 7 个维度进行深度分析：
+   - 账号概览与核心数据
+   - Top 10 爆款笔记拆解
+   - 标题模式分析
+   - 封面图视觉分析
+   - 内容选题聚类
+   - 内容形式对比（视频 vs 图文）
+   - 可复制的方法论总结
+4. **生成报告** — 输出详细的 Markdown 报告（`report.md`）和结构化 JSON 数据（`analysis.json`）
+5. **构建看板** — 生成包含图表和可视化的交互式 HTML 数据看板
 
-## Requirements
+## 环境要求
 
 - Python 3.8+
-- [Playwright](https://playwright.dev/python/) (with Chromium)
-- Claude Code with skill support
+- [Playwright](https://playwright.dev/python/)（含 Chromium）
+- 支持 Skill 的 Claude Code
